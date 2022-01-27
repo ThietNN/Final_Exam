@@ -1,5 +1,5 @@
 function checkVowel(array){
-    let check = false;
+    let count = 0;
     for(let i=0;i<array.length;i++){
         if(array[i]=="a" ||
             array[i]=="e" ||
@@ -7,10 +7,14 @@ function checkVowel(array){
             array[i]=="o" ||
             array[i]=="u"
         ){
-            check = true;
+            count++;
         }
+
     }
-    return check;
+    if (count ==0){
+        count = -1
+    }
+    return count;
 }
 let sample = ["t","h","i","e","t","n","n"]
 let result = checkVowel(sample);

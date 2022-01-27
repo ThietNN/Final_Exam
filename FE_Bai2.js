@@ -1,8 +1,8 @@
 function checkArray(x,array){
-    let check = false;
+    let check = "không";
     for(let i =0;i<array.length;i++){
         if (x==array[i]){
-            check = true;
+            check = "có";
         }
     }
     return check;
